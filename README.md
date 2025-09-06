@@ -44,6 +44,34 @@ src/
 └── pages/             # Page components
 ```
 
+## Deployment
+
+### Netlify Deployment
+
+This project is configured for easy deployment on Netlify:
+
+1. **Connect your GitHub repository** to Netlify
+2. **Build settings** are automatically configured via `netlify.toml`:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Node version: `18.20.4`
+
+3. **Deploy** - Netlify will automatically build and deploy your site
+
+### Manual Deployment
+
+```bash
+# Build the project
+npm run build
+
+# The built files will be in the 'dist' directory
+# Upload the contents of 'dist' to your hosting provider
+```
+
+### Environment Variables
+
+No environment variables are required for basic deployment.
+
 ## License
 
 MIT License
